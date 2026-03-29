@@ -14,7 +14,7 @@ matplotlib.use("Agg")
 from pathlib import Path
 from scipy import stats
 
-OUTPUT_DIR = Path("Path(__file__).parent.parent / "output"")
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 BLOOM_DIR = OUTPUT_DIR / "bloom_data"
 FIGURES_DIR = OUTPUT_DIR / "figures"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)

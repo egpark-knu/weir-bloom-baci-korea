@@ -35,8 +35,8 @@ from pathlib import Path
 import ee
 
 # ── Paths ──────────────────────────────────────────────────────
-BASE_DIR = Path(__file__).resolve().parent
-CONTROL_PATH = BASE_DIR / "control_reaches.json"
+BASE_DIR = Path(__file__).resolve().parent.parent
+CONTROL_PATH = BASE_DIR / "data" / "control_reaches.json"
 OUTPUT_DIR = BASE_DIR / "output" / "control_data"
 COMBINED_CSV = BASE_DIR / "output" / "control_reaches_bloom_summary.csv"
 

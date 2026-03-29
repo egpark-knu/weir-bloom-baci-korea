@@ -32,8 +32,8 @@ from pathlib import Path
 import ee
 
 # ── Paths ──────────────────────────────────────────────────────
-BASE_DIR = Path(__file__).resolve().parent
-INVENTORY_PATH = BASE_DIR / "weir_inventory.json"
+BASE_DIR = Path(__file__).resolve().parent.parent
+INVENTORY_PATH = BASE_DIR / "data" / "weir_inventory.json"
 OUTPUT_DIR = BASE_DIR / "output" / "bloom_data"
 COMBINED_CSV = BASE_DIR / "output" / "all_weirs_bloom_summary.csv"
 

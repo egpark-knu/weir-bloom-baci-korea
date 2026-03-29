@@ -28,7 +28,7 @@ from scipy import stats
 from collections import defaultdict
 
 # ─── Paths ───
-OUTPUT_DIR = Path("Path(__file__).parent.parent / "output"")
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 # Default: water-masked data (preferred). Fall back to unmasked.
 USE_WATER_MASKED = True
 if USE_WATER_MASKED:

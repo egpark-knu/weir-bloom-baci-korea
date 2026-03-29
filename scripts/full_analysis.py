@@ -25,7 +25,7 @@ from scipy import stats
 from collections import defaultdict
 
 # ─── Paths ───
-OUTPUT_DIR = Path("Path(__file__).parent.parent / "output"")
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 BLOOM_DIR = OUTPUT_DIR / "bloom_data"
 FIGURES_DIR = OUTPUT_DIR / "figures"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)

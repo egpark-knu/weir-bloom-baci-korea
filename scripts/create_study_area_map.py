@@ -14,12 +14,12 @@ from matplotlib.patches import FancyBboxPatch
 from pathlib import Path
 import contextily as cx
 
-OUTPUT_DIR = Path("Path(__file__).parent.parent / "output"")
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 FIGURES_DIR = OUTPUT_DIR / "figures"
 
 # Weir inventory
-WEIR_FILE = Path(str(Path(__file__).parent.parent / "data/weir_inventory.json"))
-CONTROL_FILE = Path(str(Path(__file__).parent.parent / "data/control_reaches.json"))
+WEIR_FILE = Path(str(Path(__file__).resolve().parent.parent / "data" / "weir_inventory.json"))
+CONTROL_FILE = Path(str(Path(__file__).resolve().parent.parent / "data" / "control_reaches.json"))
 
 RIVER_GROUPS = {
     "Han R.": ["이포보", "여주보", "강천보"],

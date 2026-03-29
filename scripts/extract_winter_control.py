@@ -26,9 +26,9 @@ from pathlib import Path
 import ee
 
 # ── Paths ──
-BASE_DIR = Path(__file__).resolve().parent
-WEIR_FILE = BASE_DIR / "weir_inventory.json"
-CONTROL_FILE = BASE_DIR / "control_reaches.json"
+BASE_DIR = Path(__file__).resolve().parent.parent
+WEIR_FILE = BASE_DIR / "data" / "weir_inventory.json"
+CONTROL_FILE = BASE_DIR / "data" / "control_reaches.json"
 OUTPUT_BASE = BASE_DIR / "output" / "water_masked" / "winter"
 WEIR_OUT = OUTPUT_BASE / "weirs"
 CTRL_OUT = OUTPUT_BASE / "controls"

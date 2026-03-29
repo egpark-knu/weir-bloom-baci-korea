@@ -18,12 +18,12 @@ from pathlib import Path
 import numpy as np
 from scipy import stats
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 WINTER_DIR = BASE_DIR / "output" / "water_masked" / "winter"
 WEIR_DIR = WINTER_DIR / "weirs"
 CTRL_DIR = WINTER_DIR / "controls"
-WEIR_FILE = BASE_DIR / "weir_inventory.json"
-CONTROL_FILE = BASE_DIR / "control_reaches.json"
+WEIR_FILE = BASE_DIR / "data" / "weir_inventory.json"
+CONTROL_FILE = BASE_DIR / "data" / "control_reaches.json"
 
 
 def load_site(path: Path) -> dict | None:
